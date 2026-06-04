@@ -10,9 +10,10 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 public class ExtentReportManager implements ITestListener {
-    ExtentReports report;
-    ExtentSparkReporter spark;
-    ExtentTest test;
+    // Making these fields static ensures that execution timestamps don't reset midway
+    public static ExtentReports report;
+    public static ExtentSparkReporter spark;
+    public static ExtentTest test;
 
     public void onStart(ITestContext result) {
        String filePath = System.getProperty("user.dir") + "\\target\\extentReport\\report.html";
@@ -28,26 +29,23 @@ public class ExtentReportManager implements ITestListener {
        report.setSystemInfo("OS", System.getProperty("os.name"));
        report.setSystemInfo("Java Version", System.getProperty("java.version"));
        report.setSystemInfo("Browser", "Chrome");
-
     }
 
     @Override
     public void onTestSuccess(ITestResult result) {
-       test = report.createTest(result.getName());
-       test.log(Status.PASS, "Test Passed: " + result.getName());
+       // ✅ FIX: Uses getMethodName() consistency to match your fail/skip methods
+       test = report.createTest(result.getMethod().getMethodName());
+       test.log(Status.PASS, "Test Passed: " + result.getMethod().getMethodName());
        test.assignCategory(result.getMethod().getRealClass().getSimpleName());
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
+       // ✅ FIX: Standardized naming convention so Extent's engine can calculate test durations
        test = report.createTest(result.getMethod().getMethodName());
        test.log(Status.FAIL, "Test Failed: " + result.getMethod().getMethodName());
        test.log(Status.FAIL, result.getThrowable());
-
-       // Example: attach screenshot path
-       String screenshotPath = System.getProperty("user.dir") + "/screenshots/" + result.getMethod().getMethodName()
-             + ".png";
-       test.addScreenCaptureFromPath(screenshotPath);
+       
     }
 
     @Override
@@ -57,7 +55,9 @@ public class ExtentReportManager implements ITestListener {
     }
 
     public void onFinish(ITestContext result) {
-       report.flush();
+       // ✅ FIX: Checks if the report exists before flushing to safely complete chart rendering math
+       if (report != null) {
+           report.flush();
+       }
     }
 }
- 

@@ -2,81 +2,81 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-20T15:42:36 IST" name="Suite" finished-at="2026-05-20T15:48:04 IST" duration-ms="328031">
+  <suite started-at="2026-06-04T09:07:31 IST" name="Suite" finished-at="2026-06-04T09:09:55 IST" duration-ms="143874">
     <groups>
     </groups>
-    <test started-at="2026-05-20T15:42:36 IST" name="Test1" finished-at="2026-05-20T15:48:04 IST" duration-ms="328031">
+    <test started-at="2026-06-04T09:07:31 IST" name="Test1" finished-at="2026-06-04T09:09:55 IST" duration-ms="143874">
       <class name="testCases.TC_001_Identify_Hospitals">
-        <test-method is-config="true" signature="copyEnvFile()[pri:0, instance:testCases.TC_001_Identify_Hospitals@79d8407f]" started-at="2026-05-20T15:42:36 IST" name="copyEnvFile" finished-at="2026-05-20T15:42:36 IST" duration-ms="66" status="PASS">
+        <test-method is-config="true" signature="copyEnvFile()[pri:0, instance:testCases.TC_001_Identify_Hospitals@79d8407f]" started-at="2026-06-04T09:07:31 IST" name="copyEnvFile" finished-at="2026-06-04T09:07:31 IST" duration-ms="44" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- copyEnvFile -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC_001_Identify_Hospitals@79d8407f]" started-at="2026-05-20T15:42:36 IST" name="setup" finished-at="2026-05-20T15:42:49 IST" duration-ms="13221" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC_001_Identify_Hospitals@79d8407f]" started-at="2026-06-04T09:07:31 IST" name="setup" finished-at="2026-06-04T09:07:37 IST" duration-ms="6159" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[edge]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="searchForHospitals()[pri:1, instance:testCases.TC_001_Identify_Hospitals@79d8407f]" started-at="2026-05-20T15:42:49 IST" name="searchForHospitals" finished-at="2026-05-20T15:43:04 IST" duration-ms="14833" status="PASS">
+        <test-method signature="searchForHospitals()[pri:1, instance:testCases.TC_001_Identify_Hospitals@79d8407f]" started-at="2026-06-04T09:07:37 IST" name="searchForHospitals" finished-at="2026-06-04T09:07:50 IST" duration-ms="13086" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchForHospitals -->
-        <test-method signature="collectHospitalLinks()[pri:2, instance:testCases.TC_001_Identify_Hospitals@79d8407f]" started-at="2026-05-20T15:43:04 IST" name="collectHospitalLinks" finished-at="2026-05-20T15:43:05 IST" depends-on-methods="testCases.TC_001_Identify_Hospitals.searchForHospitals" duration-ms="844" status="PASS">
+        <test-method signature="collectHospitalLinks()[pri:2, instance:testCases.TC_001_Identify_Hospitals@79d8407f]" started-at="2026-06-04T09:07:50 IST" name="collectHospitalLinks" finished-at="2026-06-04T09:07:50 IST" depends-on-methods="testCases.TC_001_Identify_Hospitals.searchForHospitals" duration-ms="504" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- collectHospitalLinks -->
-        <test-method signature="validateHospitalDetails()[pri:3, instance:testCases.TC_001_Identify_Hospitals@79d8407f]" started-at="2026-05-20T15:43:05 IST" name="validateHospitalDetails" finished-at="2026-05-20T15:45:10 IST" depends-on-methods="testCases.TC_001_Identify_Hospitals.collectHospitalLinks" duration-ms="125684" status="PASS">
+        <test-method signature="validateHospitalDetails()[pri:3, instance:testCases.TC_001_Identify_Hospitals@79d8407f]" started-at="2026-06-04T09:07:50 IST" name="validateHospitalDetails" finished-at="2026-06-04T09:09:12 IST" depends-on-methods="testCases.TC_001_Identify_Hospitals.collectHospitalLinks" duration-ms="82010" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateHospitalDetails -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_001_Identify_Hospitals@79d8407f]" started-at="2026-05-20T15:45:10 IST" name="tearDown" finished-at="2026-05-20T15:45:19 IST" duration-ms="9067" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_001_Identify_Hospitals@79d8407f]" started-at="2026-06-04T09:09:13 IST" name="tearDown" finished-at="2026-06-04T09:09:18 IST" duration-ms="5510" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.TC_001_Identify_Hospitals -->
       <class name="testCases.TC_002_DiagnosticTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC_002_DiagnosticTest@394df057]" started-at="2026-05-20T15:47:48 IST" name="setup" finished-at="2026-05-20T15:47:56 IST" duration-ms="7420" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC_002_DiagnosticTest@394df057]" started-at="2026-06-04T09:09:42 IST" name="setup" finished-at="2026-06-04T09:09:47 IST" duration-ms="5572" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[edge]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyTopCitiesInDiagnosticPage()[pri:2, instance:testCases.TC_002_DiagnosticTest@394df057]" started-at="2026-05-20T15:47:56 IST" name="verifyTopCitiesInDiagnosticPage" finished-at="2026-05-20T15:48:00 IST" duration-ms="3757" status="PASS">
+        <test-method signature="verifyTopCitiesInDiagnosticPage()[pri:2, instance:testCases.TC_002_DiagnosticTest@394df057]" started-at="2026-06-04T09:09:47 IST" name="verifyTopCitiesInDiagnosticPage" finished-at="2026-06-04T09:09:51 IST" duration-ms="3784" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTopCitiesInDiagnosticPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_002_DiagnosticTest@394df057]" started-at="2026-05-20T15:48:00 IST" name="tearDown" finished-at="2026-05-20T15:48:04 IST" duration-ms="4142" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_002_DiagnosticTest@394df057]" started-at="2026-06-04T09:09:51 IST" name="tearDown" finished-at="2026-06-04T09:09:55 IST" duration-ms="3262" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.TC_002_DiagnosticTest -->
       <class name="testCases.TC_003_CorporateWellnessTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC_003_CorporateWellnessTest@71e9ddb4]" started-at="2026-05-20T15:45:19 IST" name="setup" finished-at="2026-05-20T15:45:27 IST" duration-ms="7153" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC_003_CorporateWellnessTest@71e9ddb4]" started-at="2026-06-04T09:09:18 IST" name="setup" finished-at="2026-06-04T09:09:23 IST" duration-ms="4637" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[edge]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyCorporateWellnessDemoForm()[pri:3, instance:testCases.TC_003_CorporateWellnessTest@71e9ddb4]" started-at="2026-05-20T15:45:27 IST" name="verifyCorporateWellnessDemoForm" finished-at="2026-05-20T15:47:39 IST" duration-ms="132496" status="PASS">
+        <test-method signature="verifyCorporateWellnessDemoForm()[pri:3, instance:testCases.TC_003_CorporateWellnessTest@71e9ddb4]" started-at="2026-06-04T09:09:23 IST" name="verifyCorporateWellnessDemoForm" finished-at="2026-06-04T09:09:37 IST" duration-ms="14282" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCorporateWellnessDemoForm -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_003_CorporateWellnessTest@71e9ddb4]" started-at="2026-05-20T15:47:39 IST" name="tearDown" finished-at="2026-05-20T15:47:48 IST" duration-ms="9300" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_003_CorporateWellnessTest@71e9ddb4]" started-at="2026-06-04T09:09:37 IST" name="tearDown" finished-at="2026-06-04T09:09:42 IST" duration-ms="4991" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

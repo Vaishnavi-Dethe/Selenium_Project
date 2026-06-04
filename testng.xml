@@ -15,14 +15,4 @@
       <class name="testCases.TC_002_DiagnosticTest"/>
     </classes>
   </test>
-  
-  <!-- <test thread-count="5" name="Test2">
-  	<parameter name="browser" value="edge"/>
-    <classes>
-      <class name="testCases.TC_003_CorporateWellnessTest"/>
-      <class name="testCases.TC_002_DiagnosticTest"/>
-      <class name="testCases.TC_001_Identify_Hospitals"/>
-      <class name="testCases.TC_002_DiagnosticTest"/>
-    </classes>
-  </test> Test -->
 </suite> <!-- Suite -->

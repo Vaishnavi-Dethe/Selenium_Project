@@ -6,7 +6,6 @@ import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.time.Duration;
 
-//import org.apache.logging.log4j.core.Logger;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -25,7 +24,7 @@ import utilities.ConfigReader;
 public class BaseClass {
 
 	protected WebDriver driver;
-	public Logger logger;
+	public Logger logger;  // to store the log messages
 
 
 	@BeforeSuite(alwaysRun = true)
@@ -84,3 +83,11 @@ public class BaseClass {
 	}
 
 }
+
+
+
+
+
+
+
+

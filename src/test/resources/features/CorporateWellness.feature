@@ -1,6 +1,7 @@
 Feature: Corporate Wellness Demo Form
   @smoke @dataDriven
   Scenario: Submit corporate wellness demo request form
+    Given user is on the Practo home page
     When user navigates to Corporate Wellness page
     And user fills corporate wellness form details
       | name         | unknown                    |

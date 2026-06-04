@@ -7,14 +7,16 @@
   <test thread-count="5" name="Test1(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC_003_CorporateWellnessTest">
+      <class name="testCases.TC_001_Identify_Hospitals">
         <methods>
           <include name="copyEnvFile"/>
           <include name="tearDown"/>
+          <include name="collectHospitalLinks"/>
           <include name="setup"/>
-          <include name="verifyCorporateWellnessDemoForm"/>
+          <include name="validateHospitalDetails"/>
+          <include name="searchForHospitals"/>
         </methods>
-      </class> <!-- testCases.TC_003_CorporateWellnessTest -->
+      </class> <!-- testCases.TC_001_Identify_Hospitals -->
     </classes>
   </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

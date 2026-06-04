@@ -12,7 +12,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.io.FileHandler;
  
 public class ScreenShotUtil {
-	public static String filepath = System.getProperty("user.dir") + "/screenshots/";
+	// ✅ UPDATED: Path modified to point strictly to your local folder location
+	public static String filepath = "C:\\Users\\2488352\\Downloads\\Practo_Final_Project\\Practo 1\\Practo\\screenshots\\";
  
     public static String screenShotTC(WebDriver scdriver, String fileName) 
     {

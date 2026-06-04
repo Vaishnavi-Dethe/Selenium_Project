@@ -11,20 +11,15 @@ import utilities.AllureReportManager;
 
 
 @CucumberOptions(
-		
-//	features = "src/test/resources/features/DiagnosticTopCities.feature",
 	features = {
         "src/test/resources/features/CorporateWellness.feature",
         "src/test/resources/features/DiagnosticTopCities.feature",
         "src/test/resources/features/IdentifyHospitals.feature"
     },
-    //features = "@target/rerun.txt",
-	//tags = "@regression",
     glue = {"stepdefinitions","hooks"}, // Ensure this matches your package name exactly (lowercase)
     plugin = {
         "pretty",
-        "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
-        "rerun:target/rerun.txt"
+        "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
     },
     monochrome = true
 )
