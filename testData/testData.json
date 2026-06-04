@@ -1,0 +1,16 @@
+{
+  "Homepage": {
+	"location": "Bangalore",
+	"hospitalSearch": "Hospital",
+  }
+	
+
+  "corporateWellness": {
+    "cw_name": "unknown",
+    "cw_org": "unknown organization",
+    "cw_mobile": "9876543211",
+    "cw_email": "unknown@abc.com",
+    "cw_org_size": "<500",
+    "cw_interest": "Taking a demo"
+  }
+}
